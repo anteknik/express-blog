@@ -1,0 +1,23 @@
+extends ../index.jade
+
+block moreStyle
+    link(rel="stylesheet", href="/styles/forms.css")
+
+block title
+    title Blog Register
+
+block content
+    form(method="POST", action="/auth/register")
+        h1 Register New User
+        div.form-group
+            label(for="username") Email (Username)
+            input#username(name="username", type="email", required="required", placeholder="user@example.com")
+        div.form-group
+            label(for="password") Password
+            input#password(name="password", type="password", rquired="required", placeholder="Your Password")
+        div.form-group
+            label(for="retype-password") Retype Password
+            input#retype-password(name="retype-password", type="password", rquired="required", placeholder="Retype Your Password")
+        div.form-actions
+            input.btn.btn-reset(type="reset", value="Clear")
+            input.btn.btn-submit(type="submit", value="Register")

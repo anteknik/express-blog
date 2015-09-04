@@ -1,0 +1,66 @@
+form {
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+form h1 {
+    text-align: center;
+}
+
+.btn {
+    background: black;
+    border: none;
+    color: white;
+    margin: 0 8px;
+    min-width: 92px;
+    padding: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-reset {
+    background: #D3D3D3;
+    border: 1px solid #E3E3E3;
+    color: 000;
+}
+
+.btn-submit {
+    background: #45B29D;
+    border: 1px solid #2C9984;
+}
+
+.form-group {
+    margin: 12px 0;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea,
+.form-group select {
+    display: inline-block;
+}
+
+.form-group label {
+    margin-right: 32px;
+    text-align: right;
+    vertical-align: top;
+    width: 160px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    min-height: 32px;
+    padding: 4px;
+    width: 280px;
+}
+
+.form-group textarea {
+    min-height: 320px;
+}
+
+.form-actions {
+    text-align: right;
+}

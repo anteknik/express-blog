@@ -1,0 +1,16 @@
+extends ../index.jade
+
+block moreStyle
+    link(rel="stylesheet", href="/styles/post.css")
+
+block title
+    title Post List
+
+block content
+    if posts.length > 0
+        each post in posts
+            div.post
+                h1.post-title= post.title
+                article.post-content!= markdown(post.content)
+    else
+        p No New Post

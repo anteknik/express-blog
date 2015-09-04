@@ -1,0 +1,40 @@
+html
+    head
+        block title
+            title Hello, Jade!
+        link(rel="stylesheet", href="/styles/main.css")
+
+        block moreStyle
+    body
+        header#main-header
+            nav#main-nav(role="navigation")
+                a#logo(href="/") BlogEngine
+                ul.horizontal-menu
+                    li.menu-item: a(href="/about") About
+                    if loggedin
+                        li.menu-item: a(href="/post/list") Posts
+                        li.menu-item: a(href="/post/create") New Post
+                        li.menu-item: a(href="/auth/logout") Logout
+                    else
+                        li.menu-item: a(href="/auth/login") Login
+                        li.menu-item: a(href="/auth/register") Register
+
+        #main-container
+            if flashError
+                div.flash-error= flashError
+            if flashInfo
+                div.flash-info= flashInfo
+
+            block content
+                h1 Hello, Jade
+                p This is written from inside JADE!
+
+        footer#main-footer
+            aside
+                h4 Links
+                ul.veritcal-menu
+                    li.menu-item: a(href="/") Link Items
+                    li.menu-item: a(href="/") Link Items
+                    li.menu-item: a(href="/") Link Items
+            aside#copyright
+                p footer &copy; Someone 2015

@@ -1,0 +1,20 @@
+extends ../index.jade
+
+block moreStyle
+    link(rel="stylesheet", href="/styles/forms.css")
+
+block title
+    title Blog Login
+
+block content
+    form(method="POST", action="/auth/login")
+        h1 User Login
+        div.form-group
+            label(for="username") Username
+            input#username(name="username", type="email", required="required", placeholder="user@example.com")
+        div.form-group
+            label(for="password") Password
+            input#password(name="password", type="password", required="required", placeholder="your password")
+        div.form-actions
+            input.btn.btn-reset(type="reset", value="Clear")
+            input.btn.btn-submit(type="submit", value="Login")
