@@ -10,7 +10,10 @@
     	"pug": "^2.0.3",
     	"markdown-js": "0.0.3",
     	"mysql": "^2.7.0",
-    	"node-gyp": "^2.0.1"
+    	"node-gyp": "^2.0.1",		
+		"graceful-fs": "^3.0.11",
+		"minimatch": "^2.0.10",
+		"constantinople": "^3.0.2"
   	},
   	"devDependencies": {
     	"gulp": "^3.9.0",

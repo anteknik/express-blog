@@ -1,31 +1,8 @@
 {
-  "name" : "anteknik/express-blog",
-  "description" : "Simple blog engine built using ExpressJS and NodeJS for learning purpose.",
-  "type" : "project",
-  "version" : "0.0.1",
-  "authors" : [{
-		"name" : "Anton Purwanto",
-		"email" : "anton.takaful@gmail.com",
-		"homepage" : "https://github.com/anteknik",
-		"role" : "developer"
-		}
-	],
-   "keywords" : [
-		"node",
-		"express-js",
-		"blog",
-		"sample",
-		"mysql",
-		"tutorial",
-		"pug",
-		"framework"
-	],
-	"homepage" : "https://github.com/anteknik/express-blog",
-	"license" : [
-		"MIT"
-	],
-	"require" : {
-    	"php" : ">=5.3.3",
+   	"name" : "anteknik/express-blog",
+   	"description" : "Simple blog engine built using ExpressJS and NodeJS for learning purpose.",
+   	"main": "server.js",
+  	"dependencies": {
     	"bcrypt": "^2.0.0",
     	"body-parser": "^1.12.4",
     	"express": "^4.12.4",
@@ -33,13 +10,38 @@
     	"pug": "^2.0.3",
     	"markdown-js": "0.0.3",
     	"mysql": "^2.7.0",
-    	"node-gyp": "^2.0.1"
+    	"node-gyp": "^2.0.1",		
+		"graceful-fs": "^3.0.11",
+		"minimatch": "^2.0.10",
+		"constantinople": "^3.0.2"
   	},
-  	"require-dev": {
-        "gulpjs/gulp": "dev-master",
-    	"gimm/gulp-express": "dev-master"
-    	},
-  "support" : {
+  	"devDependencies": {
+    	"gulp": "^3.9.0",
+    	"gulp-express": "^0.3.5"
+  	},
+  	"scripts": {
+    	"test": "echo \"Error: no test specified\" && exit 1"
+  	},
+  	"keywords": [
+    	"node",
+	"express-js",
+	"blog",
+	"sample",
+	"mysql",
+	"tutorial",
+	"pug",
+	"framework"
+  	],
+  	"authors" : [{
+	"name" : "Anton Purwanto",
+	"email" : "anton.takaful@gmail.com",
+	"homepage" : "https://github.com/anteknik",
+	"role" : "developer"
+		}
+	],
+	"homepage" : "https://github.com/anteknik/express-blog",
+  	"license": "MIT",
+  	"support" : {
 		"source" : "https://github.com/anteknik/express-blog",
 		"issues" : "https://github.com/anteknik/express-blog/issues"
 	}
